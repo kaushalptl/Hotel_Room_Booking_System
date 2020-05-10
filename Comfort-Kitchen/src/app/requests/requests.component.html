@@ -1,0 +1,124 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a class="navbar-brand ml-5" href="index.html">
+            <img src="../../assets/images/s1.jpg" width="30" height="30" class="d-inline-block align-middle  my-auto"
+               >
+            Comfort Kitchen
+        </a>
+       
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+            </ul>
+           
+        </div>
+    </nav> -->
+    
+    <!-- navbar ends -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: black">
+
+            <img src="./assets/images/s1.jpg" width="30" height="30" class="d-inline-block align-top" alt=""
+                style="margin-right: 3px;">
+            <p class="text">Comfort Kitchen</p>
+        
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text1 book">
+        
+                       
+                            <li class="nav-item">
+                                    <a class="nav-link " routerLink="/comfortkitchen">Logout</a>
+                                </li>
+                   
+        
+                </ul>
+        
+            </div>
+        </nav>
+    
+    <section id="requests" class="bg-light">
+        <div class="container pt-4" id="main">
+    
+    
+                <h1 class="text-center text-capitalize">Requests</h1>
+                <hr class="w-25 mx-auto  pt-3">
+    
+            <div  class="row">
+                    <div *ngFor="let obj of Reqdata,index as id" class="col-lg-6 col-12">
+                        
+                            <div class="card my-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="https://image.ibb.co/jw55Ex/def_face.jpg"
+                                                class="img img-rounded img-fluid" style="width:100%;" />
+        
+        
+                                        </div>
+                                        <div class=" col-md-9 col-12">
+                                            <p>
+                                                <a class="float-left" href="#">
+                                                    <h4><strong>
+                                                        {{obj.gname}}</strong></h4>
+                                                </a>
+        
+                                            </p>
+                                            <div class="clearfix"></div>
+        
+                                            <h6 class="card-text text-dark"><strong>{{obj.email}}</strong> </h6>
+                                            <p class="card-text">
+                                                <address>
+                                                <strong>Contact no:</strong> &nbsp; {{obj.phone}}<br>
+                                                <strong>No. of Guests:</strong> &nbsp;  {{obj.guests}}<br> 
+                                                </address>
+                                                    
+                                    
+        
+                                            <h5 class="datetime"><span class=" float-center badge badge-warning "> <i
+                                                        class="fa fa-clock"></i> &nbsp;{{obj.time}}</span></h5>
+                                            <h5 class="datetime"><span class="float-center  badge badge-warning"> <i
+                                                        class="fa fa-calendar"></i> &nbsp;{{obj.date}}</span></h5>
+                                            
+                                           
+        
+                                            <a class="float-right btn text-white btn-danger mx-1" (click)="Reject(id)"><i class="fa fa-times"></i>
+                                                Reject </a>
+                                            <a class="float-right btn text-white btn-success" (click)="Approve(id)"><i class="fa fa-check"></i>
+                                                Approve</a>
+        
+        
+                                        </div>
+        
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+        
+        
+                            <!-- klh.afdfhksgfdsklgndghgfmj -->
+        
+                                </div>
+                   
+                    
+    
+               
+                    </div>
+    
+    
+    
+                            
+                           
+    
+            </div>
+      
+    </section>
+    
+    
+    
+    
+    
+    

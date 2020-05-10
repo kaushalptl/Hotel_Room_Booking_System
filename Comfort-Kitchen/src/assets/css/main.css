@@ -1,0 +1,181 @@
+
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  max-width: 540px;
+}
+
+div.gallery:hover {
+  border: 5px solid green;
+  border-collapse: separate;
+
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 25px
+
+}
+
+.b1
+{
+	margin-left: 13px;
+  margin-right: 13px;
+  
+}
+
+.fixed
+{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  border: 5px solid white;
+  top: 0;
+  width: 100%;
+}
+
+.b
+{
+	margin-top: 25px !important;
+}
+
+
+.container {
+  
+  width: 50%;
+}
+
+.text1
+{
+  font-size: 20px;
+  color: orange;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.gallery :hover .overlay {
+  opacity: 0.5;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  font-variant: small-caps;
+  margin-top: 13px;
+}
+
+.text2 {
+ color:white;
+ font-size: 20px;
+ overflow: auto;
+
+}
+ .nav-item a {
+   color:white !important;
+ margin: 10px  !important;
+} 
+.nav-item a:hover {
+  background-color: orange !important; 
+  color:black !important;
+  border-radius: 5px;
+  
+}
+
+.box3{box-shadow:0 0 3px rgba(0,0,0,.3);position:relative}
+.box3 .box-content,.box3:after,.box3:before{position:absolute;left:7%;right:7%;transition:all .3s}
+.box3:after,.box3:before{display:block;background:rgba(0,0,0,.3);top:10%;bottom:10%;z-index:1;transform:scale(0,1)}
+.box3:after{top:10.8%;bottom:10.8%;transform:scale(1,0)}
+.box3:hover:after,.box3:hover:before{transform:scale(1);animation:animate 1.5s}
+.box3:hover:before{border-top:3px solid #fff;border-bottom:3px solid #fff}
+.box:hover:after{border-left:3px solid #fff;border-right:3px solid #fff}
+.box img{width:100%;height:auto;transition:all .3s}
+.box3:hover img{transform:scale(1.2);filter:blur(5px);-moz-filter:blur(5px);-webkit-filter:blur(5px)}
+.box3 .box-content{padding:30px 10px;top:10%;bottom:10%;opacity:0;z-index:2}
+.box3:hover .box-content{box-shadow:0 0 0 35px rgba(255,255,255,.3);opacity:1;transition:all .3s}
+.box3 .title{font-size:30px;font-weight:600;color:black;margin:auto;text-align: center;overflow: hidden;}
+.box3 .post{display:block;margin:0 0 5px;font-size:14px;color:rgba(255,255,255,.8);overflow: hidden;}
+.box3 .description{font-size:20px;color:#fff;margin:20px 0  0 20px;font-weight: 20px;overflow: hidden;}
+@keyframes animate{0%,100%{opacity:0.5}}
+
+
+input{
+  
+  margin-top: 30px !important;
+  border:2px solid black;
+  border-radius: 15px !important;
+  width:430px;
+  padding: 5px;
+
+}
+  input:focus{
+   border: 3px solid black;
+   /* border-radius: 15px !important; */
+ }
+
+input[placeholder] {
+
+  text-align:center;
+  color:black;
+  font-size: 3vh;
+}
+
+.autocomplete {
+
+  border-radius: 15px !important;
+
+}
+.right1 {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-img{
+  background-image: url(../images/food.jpg);
+}
+.bg-img1{
+  background-image: url(../images/bg_1.jpg);
+  height: 100%;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

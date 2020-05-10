@@ -1,0 +1,74 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+    <div style="margin-top:130px !important; text-decoration: underline; text-shadow: 3px 2px gray; ">
+    <h2 class="text-center display-4"><b><i>Make Reservation</i></b></h2>
+</div>
+    <div class="row mt-5">
+        <div class="col-6 ">
+            
+            <form  #bookingform="ngForm" (ngSubmit)=book(bookingform.value) [formGroup]="myForm">
+             <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <h5>Name</h5>
+                        <input required type="text" name="gname" formControlName="gname" class="form-control" placeholder="Your Name" ngModel>
+                        <span *ngIf="isValid('gname')" class="text-danger">*Name is mandatory.</span>
+                    </div>
+                </div>
+                <div class="col-md-6  col-sm-12">
+                    <div class="form-group">
+                        <h5>Email</h5>
+                        <input required type="email" name="email" formControlName="email" class="form-control" placeholder="Your Email" ngModel>
+                        <span *ngIf="isValid('email')" class="text-danger">Email format incorrect: abc@pqr.xyz</span>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6  col-sm-12">
+                    <div class="form-group">
+                        <h5>Phone</h5>
+                        <input required type="text" name="phone" formControlName="phone" class="form-control" placeholder="Phone" ngModel>
+                        <span *ngIf="isValid('phone')"class="text-danger">Contact Number is a mandatory...Length:10 digits</span>
+                    </div>
+                </div>
+                <div class="col-md-6  col-sm-12">
+                <div class="form-group">
+                    <h5>Date</h5>
+                    <input required type="date" name="date" formControlName="date" class="form-control" id="book_date" placeholder="Date" ngModel>
+                    <span *ngIf="isValid('date')" class="text-danger">Date is Compusory.</span>
+                </div>
+            </div>
+
+                <div class="col-md-6  col-sm-12">
+                    <div class="form-group">
+                        <h5>Time</h5>
+                        <input required type="time" formControlName="time" name="time" class="form-control" id="book_time" placeholder="Time" ngModel>
+                        <span *ngIf="isValid('time')" class="text-danger">Time field is Compusory.</span>
+                    </div>
+                </div>
+                <div class="col-md-6  col-sm-12">
+                    <div class="form-group">
+                        <h5>Guests</h5>
+                        <input required type="number" name="guests" formControlName="guests" class="form-control" placeholder="Number of Guests" ngModel>
+                        <span *ngIf="isValid('guests')" class="text-danger">Guests field is Compusory.</span>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 mt-3">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success" [disabled]="bookingform.invalid">Make A Reservation</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+        
+        </div>
+        <div class="col-md-6">
+                <img src="./assets/images/dessert-4.jpg" class="image-responsive" height="450vh">
+            </div>
+    </div>
+
+
+   <app-footer></app-footer>
+</div>
